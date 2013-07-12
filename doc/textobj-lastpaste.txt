@@ -1,0 +1,57 @@
+*textobj-lastpaste.txt*   text object plugin for selecting the last paste
+
+
+                            -----------------
+                            textobj-lastpaste
+                            -----------------
+
+version : 0.1
+author  : tobias pflug <tobias.pflug@gmail.com>
+license : MIT license
+
+================================================================================
+CONTENTS                                              *textobj-lastpaste-contents*
+
+    1. Introduction ............... |textobj-lastpaste-intro|
+    2. Requirements ............... |textobj-lastpaste-requirements|
+    3. Key Mapings ................ |textobj-lastpaste-key-mappings|
+    4. Customizing ................ |textobj-lastpaste-customizing|
+    5. Changelog .................. |textobj-lastpaste-changelog|
+
+================================================================================
+INTRODUCTION                                           *textobj-lastpaste-intro*
+
+================================================================================
+REQUIREMENTS                                      *textobj-lastpaste-requirements*
+
+    - vim 7.2 or later
+    - textobj-user <https://github.com/vim-scripts/textobj-user.git>
+
+
+================================================================================
+KEY MAPPINGS                                      *textobj-lastpaste-key-mappings*
+
+*<Plug>(textobj-lastpaste-i)* :
+Selects all lines of the last paste.
+
+================================================================================
+CUSTOMIZING                                        *textobj-lastpaste-customizing*
+
+This plugin will define the following key mappings in Visual mode and
+Operator-pending mode automatically.  If you don't want these key mappings,
+define |g:textobj_comment_no_default_key_mappings| before this plugin is
+loaded (e.g. in your |vimrc|).  You can also use
+|:TextobjCommentDefaultKeyMappings| to redefine these key mappings.  This
+command doesn't override existing {lhs}s unless [!] is given.
+
+	{lhs}	{rhs}			~
+	-----	---------------------------	~
+	ip	    <Plug>(textobj-lastpaste-i)
+
+================================================================================
+CHANGELOG                                            *textobj-lastpaste-changelog*
+
+v0.1    Initial release
+
+
+vim:ts=4:et:ft=help:
